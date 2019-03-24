@@ -138,6 +138,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-google-fit')
     compile project(':react-native-gesture-handler')
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])

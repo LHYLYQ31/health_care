@@ -1,15 +1,29 @@
 import React from 'react';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
-// import Login from './screens/Login';
+import Login from './screens/Login';
 import Register from './screens/Register';
-// import Home from './screens/Home';
+import Home from './screens/Home';
+import Topic from './screens/Topic';
+import TopicDetail from './screens/TopicDetail';
+import TopicPublish from './screens/TopicPublish';
+import AllDoctor from './screens/AllDoctor';
+import SportManage from './screens/SportManage';
+import UserCenter from './screens/UserCenter';
+import CheckPassword from './screens/CheckPassword';
 
 const RootStack = createStackNavigator({
-    // Login: { screen: Login },
+    Login: { screen: Login },
     Register: { screen: Register },
-    // Home: { screen: Home },
+    Home: { screen: Home },
+    Topic: { screen: Topic },
+    TopicDetail: { screen: TopicDetail },
+    TopicPublish: { screen: TopicPublish },
+    AllDoctor: { screen: AllDoctor },
+    SportManage: { screen: SportManage },
+    UserCenter: { screen: UserCenter },
+    CheckPassword: { screen: CheckPassword },
 }, {
-    initialRouteName: 'Register', // 默认显示界面
+    initialRouteName: 'Login', // 默认显示界面
     defaultNavigationOptions: {  // 屏幕导航的默认选项, 也可以在组件内用 static navigationOptions 设置(会覆盖此处的设置)
         // title:'消息',
         header: null,
