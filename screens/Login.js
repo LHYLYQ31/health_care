@@ -22,6 +22,8 @@ export default class Register extends PureComponent {
             password:"1"
         }
         this._login(Config,loginParam,(data)=>{
+
+
             console.log("++++++++++++++++++++++++++++++++++++++++======");
             console.log(data);
         });
